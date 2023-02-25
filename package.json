@@ -1,0 +1,38 @@
+{
+  "name": "@smockoro/eslint-config",
+  "description": "shared eslint configration",
+  "version": "0.1.0",
+  "scripts": {
+    "lint:editorconfig": "npx editorconfig-checker",
+    "lint:license": "npx license-checker"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smockoro/eslint-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "eslintrc",
+    "typescript"
+  ],
+  "author": "smockoro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smockoro/eslint-config/issues"
+  },
+  "homepage": "https://github.com/smockoro/eslint-config#readme",
+  "devDependencies": {
+    "editorconfig-checker": "^5.0.1",
+    "license-checker": "^25.0.1"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4"
+  }
+}
