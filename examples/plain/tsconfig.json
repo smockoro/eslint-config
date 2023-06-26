@@ -1,0 +1,15 @@
+{
+  "extends": "@smockoro/tsconfig/bases/tsconfig.json",
+  "compilerOptions": {
+    "module": "ES2022",
+    "target": "ES2022",
+    "outDir": "dist",
+    "lib": ["DOM", "ES2022"]
+  },
+  "include": [
+    "./src/**/*",
+    "./test/**/*",
+    "jest.config.js",
+    ".eslintrc.js",
+  ]
+}
