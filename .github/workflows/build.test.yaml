@@ -1,0 +1,15 @@
+name: lint-test
+on:
+  - push
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+      - name: build examples/plain
+        run: npm run build -w examples/plain
+      - name: lint examples/plain
+        run: npm run lint -w examples/plain
