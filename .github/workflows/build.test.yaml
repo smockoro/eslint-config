@@ -12,8 +12,6 @@ jobs:
       - name: install deps
         run: |
           npm install
-          cd examples/plain
-          npm install
       - name: build examples/plain
         run: npm run build -w examples/plain
       - name: lint examples/plain
